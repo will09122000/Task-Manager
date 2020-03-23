@@ -1,0 +1,150 @@
+body.dark {
+    background-color: #141414;
+    color: #F5F5F5;
+}
+
+body.dark h1 {
+    color: #ebebeb;
+}
+
+body.dark h2 {
+    color: #ebebeb;
+}
+
+body.dark label {
+    color: #ebebeb;
+}
+
+body.dark input[type=text], select {
+    border: 1px solid #ebebeb;
+}
+
+body.dark textarea {
+    border: 1px solid #ebebeb;
+}
+
+body.dark input[type=password], select {
+    border: 1px solid #ebebeb;
+}
+
+body.dark input[type=date], select {
+    border: 1px solid #ebebeb;
+}
+
+body.dark input[type=submit] {
+    background-color: #7289DA;
+    color: #ebebeb;
+}
+
+body.dark input[type=submit]:hover {
+    background-color: #687BC7;
+}
+
+body.dark input[type=checkbox] {
+    background-color: #ebebeb;
+}
+
+body.dark input[type=checkbox]:hover {
+    background-color: #ebebeb;
+}
+
+body.dark input[type=checkbox]:checked {
+    background-color: #687BC7;
+}
+
+body.dark div.form {
+    background-color: #282828;
+}
+
+body.dark div.box {
+    border-color: #ebebeb;
+    background-color: #282828;
+}
+
+body.dark div.new {
+    background-color: #282828;
+}
+
+body.dark button {
+    color: #ebebeb;
+}
+
+body.dark a {
+    color: #ebebeb;
+}
+
+
+body.light {
+    background-color: #ebebeb;
+    color: #141414;
+}
+
+body.light h1 {
+    color: #141414;
+}
+
+body.light h2 {
+    color: #141414;
+}
+
+body.light label {
+    color: #141414;
+}
+
+body.light input[type=text], select {
+    border: 1px solid #141414;
+}
+
+body.light textarea {
+    border: 1px solid #141414;
+}
+
+body.light input[type=password], select {
+    border: 1px solid #141414;
+}
+
+body.light input[type=date], select {
+    border: 1px solid #141414;
+}
+
+body.light input[type=submit] {
+    background-color: #7289DA;
+    color: #141414;
+}
+
+body.light input[type=submit]:hover {
+    background-color: #687BC7;
+}
+
+body.light input[type=checkbox] {
+    background-color: #141414;
+}
+
+body.light input[type=checkbox]:hover {
+    background-color: #141414;
+}
+
+body.light input[type=checkbox]:checked {
+    background-color: #687BC7;
+}
+
+body.light div.form {
+    background-color: #D7D7D7;
+}
+
+body.light div.box {
+    border-color: #141414;
+    background-color: #D7D7D7;
+}
+
+body.light div.new {
+    background-color: #D7D7D7;
+}
+
+body.light button {
+    color: #141414;
+}
+
+body.light a {
+    color: #141414;
+}

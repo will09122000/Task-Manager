@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 1000px) {
+    body {
+        font-size: xx-large;
+    }
+
+    div.form {
+        width: 100%;
+    }
+
+    dev.new {
+        width: 100%;
+    }
+
+    input[type=text], select {
+        height: 100px;
+        font-size: xx-large;
+    }
+
+    input[type=password], select {
+        height: 100px;
+        font-size: xx-large;
+    }
+
+    input[type=textarea], select {
+        font-size: xx-large;
+    }
+
+    input[type=submit] {
+        height: 100px;
+        font-size: xx-large;
+    }
+    table {
+        font-size: xx-large;
+    }
+
+    button {
+        font-size: xx-large;
+    }
+
+    input[type=submit].group {
+        width: 300px;
+    }
+}
+/* Desktop Styles */
+@media only screen and (min-width: 1001px) {
+    body {
+
+    }
+}

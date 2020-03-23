@@ -1,0 +1,169 @@
+body {
+    font-family: Verdana;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    float: left;
+    display: block;
+    clear: both;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=date], select {
+    width: 66%;
+    padding: 12px 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    margin-right: auto;
+}
+
+input[type=submit].form {
+    width: 100%;
+    background-color: #7289DA;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=submit]:hover {
+    background-color: #687BC7;
+}
+
+input[type=checkbox] {
+    height: 25px;
+    width: 25px;
+}
+
+input[type=checkbox]:hover {
+}
+
+input[type=checkbox]:checked {
+    background-color: #687BC7;
+}
+
+div.form {
+    width: 30%;
+    border-radius: 5px;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+div.box {
+    width: 200px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+    display: block;
+    float: left;
+    margin-right: 30px;
+}
+
+div.new {
+    width: 30%;
+    border-radius: 5px;
+    padding: 20px;
+    display: block;
+}
+
+button {
+    background-color: #7289DA;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+input[type=submit] {
+    background-color: #7289DA;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: block;
+    display: inline-block;
+    text-align: center;
+}
+
+p.error {
+    color: red;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid #7f7f7f;
+    float: left;
+    display: block;
+    clear: both;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+    border: 2px solid #7f7f7f;
+}
+
+img {
+    display: inline-block;
+}
+
+footer {
+    float: left;
+    display: block;
+    clear: both;
+    margin-top: 20px;
+}
