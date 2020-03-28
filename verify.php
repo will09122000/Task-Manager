@@ -91,6 +91,7 @@ if (isset($_POST['login_user'])) {
                 $hash = $row['password'];
             }
             $password = md5($salt . $password);
+
             if ($password == $hash) {
                 session_start();
                 $_SESSION['user'] = $username;
