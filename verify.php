@@ -8,10 +8,10 @@ $other_errors = array();
 $db = mysqli_connect('emps-sql.ex.ac.uk', 'wc352', 'wc352', 'wc352', '3306');
 
 if (isset($_POST['reg_user'])) {
-    $username = $_POST['username'];
+    $username = real_escape_string($_POST['username']);
     $_SESSION["username"] = $username;
-    $password = $_POST['password'];
-    $password_check = $_POST['password_check'];
+    $password = real_escape_string($_POST['password']);
+    $password_check = real_escape_string($_POST['password_check']);
 
     if (empty($username))
         array_push($username_errors, "Username not set");
@@ -55,7 +55,10 @@ if (isset($_POST['reg_user'])) {
             }
         } else {
             $salt = bin2hex(openssl_random_pseudo_bytes(10));
-            $hash = md5($salt . $password);
+            $pepper_file = fopen("pepper.txt", "r") or die("Unable to open file");
+            $pepper = fread($pepper_file,filesize("pepper.txt"));
+            fclose($pepper_file);
+            $hash = md5($salt . $password . $pepper);
             $query = "INSERT INTO users (username, password, salt) VALUES('$username', '$hash', '$salt')";
             mysqli_query($db, $query);
             session_start();
@@ -70,9 +73,9 @@ if (isset($_POST['reg_user'])) {
 }
 
 if (isset($_POST['login_user'])) {
-    $username = $_POST['username'];
+    $username = real_escape_string($_POST['username']);
     $_SESSION["username"] = $username;
-    $password = $_POST['password'];
+    $password = real_escape_string($_POST['password']);
 
     if(empty($username))
         array_push($username_errors, "Username not set");
@@ -82,15 +85,17 @@ if (isset($_POST['login_user'])) {
 
     if (empty($username_errors) and empty($password_errors)) {
         $query = "SELECT * FROM users WHERE username='$username'";
-        $results = mysqli_query($db, $query);
+        $result = mysqli_query($db, $query);
+        $user = mysqli_fetch_assoc($result);
 
-        if (mysqli_num_rows($results) == 1) {
-
-            while ($row = mysqli_fetch_assoc($result)) {
-                $salt = $row['salt'];
-                $hash = $row['password'];
-            }
-            $password = md5($salt . $password);
+        if ($user) {
+            $row = mysql_fetch_row($result);
+            $salt = $user['salt'];
+            $pepper_file = fopen("pepper.txt", "r") or die("Unable to open file");
+            $pepper = fread($pepper_file,filesize("pepper.txt"));
+            fclose($pepper_file);
+            $hash = $user['password'];
+            $password = md5($salt . $password . $pepper);
 
             if ($password == $hash) {
                 session_start();

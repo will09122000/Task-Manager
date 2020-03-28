@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc39cdd0-315a-45a4-849e-bdab1ce84a0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pepper.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c464c03d-ef65-40a6-9ad6-8cc290858d3e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c464c03d-ef65-40a6-9ad6-8cc290858d3e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/56bd2be1-ed08-434e-ad67-ce5a85647512.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/56bd2be1-ed08-434e-ad67-ce5a85647512/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/verify.php" beforeDir="false" afterPath="$PROJECT_DIR$/verify.php" afterDir="false" />
     </list>
@@ -33,21 +33,6 @@
       <set />
     </option>
     <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="emps-sql" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="emps-sql" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="emps-sql" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="wc352: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-      </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="Exeter" type="feb32156:DbDataSourceImpl" />
@@ -80,12 +65,16 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1X4NRpeAd7XkPLLnYSfp6ZK4MpX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -94,7 +83,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
     <property name="database.data.extractors.current.id" value="Tab-separated (TSV)_id" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Downloads" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -124,7 +113,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:Exeter" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@73730415" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@b2cff3b" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -171,11 +160,15 @@
       <workItem from="1584104238093" duration="9189000" />
       <workItem from="1584269842150" duration="11111000" />
       <workItem from="1585052503405" duration="1608000" />
+      <workItem from="1585390730511" duration="4579000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1431" y="342" key="#CLI_Interpreters" timestamp="1580583698092">
@@ -203,9 +196,10 @@
     </state>
     <state x="880" y="267" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1585054358825" />
     <state x="1374" y="356" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1584110712695" />
-    <state x="1050" y="331" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585052519755">
-      <screen x="0" y="23" width="1680" height="979" />
+    <state x="1050" y="330" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585390736274">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state x="1050" y="330" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1585390736274" />
     <state x="1600" y="440" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1584270102164" />
     <state x="1050" y="331" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1680.979@0.23.1680.979" timestamp="1585052519755" />
     <state x="1650" y="451" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581862708762">
@@ -224,9 +218,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="239" height="457" key="HiddenNamespacesPopup/0.0.1680.1050@0.0.1680.1050" timestamp="1585054421018" />
-    <state x="1754" y="624" key="NewPhpFileDialog" timestamp="1584107310358">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="1151" y="468" key="NewPhpFileDialog" timestamp="1585392332253">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state x="1151" y="468" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1585392332253" />
     <state x="1754" y="624" key="NewPhpFileDialog/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1584107310358" />
     <state x="1262" y="235" key="SettingsEditor" timestamp="1583765666712">
       <screen x="0" y="0" width="2560" height="1400" />
