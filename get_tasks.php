@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION["user"])) {
-    header("location: verify_login.php");
+    header("location: login.php");
     exit();
 }
 $url = "http://students.emps.ex.ac.uk/dm656/tasks.php";

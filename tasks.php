@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION["user"])) {
-    header("location: verify_login.php");
+    header("location: login.php");
     exit();
 }
 $user = $_SESSION["user"];
@@ -93,7 +93,7 @@ $result = mysqli_query($db, $title_query);
     </table> <br>
 
     <footer>
-        <a href="logout.php" style="margin-left: 20px;"> Click here </a> to log out
+        <a href="logout.php" style="margin-left: 20px;"> Click here</a> to log out
     </footer>
 
 </body>
