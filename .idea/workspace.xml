@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc39cdd0-315a-45a4-849e-bdab1ce84a0d" name="Default Changelist" comment="" />
+    <list default="true" id="cc39cdd0-315a-45a4-849e-bdab1ce84a0d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/verify.php" beforeDir="false" afterPath="$PROJECT_DIR$/verify.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,23 +26,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="emps-sql" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="emps-sql" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="emps-sql" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="wc352: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -51,8 +38,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1X4NRpeAd7XkPLLnYSfp6ZK4MpX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -131,6 +124,10 @@
       <workItem from="1584031906781" duration="1663000" />
       <workItem from="1584104238093" duration="9189000" />
       <workItem from="1584269842150" duration="11111000" />
+      <workItem from="1585304036010" duration="31000" />
+      <workItem from="1585304117073" duration="2619000" />
+      <workItem from="1590138903518" duration="6222000" />
+      <workItem from="1590659541616" duration="75000" />
     </task>
     <servers />
   </component>
@@ -138,10 +135,6 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1431" y="342" key="#CLI_Interpreters" timestamp="1580583698092">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1431" y="342" key="#CLI_Interpreters/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1580583698092" />
     <state x="1549" y="362" key="#Node.js_and_NPM" timestamp="1583765540534">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -150,72 +143,53 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1512" y="362" key="#Notifications/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1581517640511" />
-    <state x="1508" y="311" key="#SQL_Dialects" timestamp="1583256650939">
+    <state x="1508" y="311" key="#SQL_Dialects" timestamp="1590140848917">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="1508" y="311" key="#SQL_Dialects/-1920.151.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1590140848917" />
     <state x="1508" y="311" key="#SQL_Dialects/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1583256650939" />
-    <state x="1639" y="393" key="#Task_Manager" timestamp="1580574642557">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1639" y="393" key="#Task_Manager/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1580574642557" />
     <state x="1374" y="356" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584110712695">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1374" y="356" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1584110712695" />
-    <state x="1600" y="440" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584270102164">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="1200" y="327" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585304057203">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="1200" y="327" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585304057203" />
     <state x="1600" y="440" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1584270102164" />
     <state x="1650" y="451" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581862708762">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1650" y="451" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1581862708762" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1585304441423">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1920.1040@0.0.1920.1040" timestamp="1585304441423" />
     <state x="1060" y="456" width="440" height="873" key="FileChooserDialogImpl" timestamp="1584108947896">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="456" width="440" height="873" key="FileChooserDialogImpl/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1584108947896" />
-    <state x="1754" y="624" key="NewPhpFileDialog" timestamp="1584107310358">
+    <state x="1754" y="624" key="NewPhpFileDialog" timestamp="1590138949665">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="1754" y="624" key="NewPhpFileDialog/-1920.151.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1590138949665" />
     <state x="1754" y="624" key="NewPhpFileDialog/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1584107310358" />
     <state x="1262" y="235" key="SettingsEditor" timestamp="1583765666712">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1262" y="235" key="SettingsEditor/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1583765666712" />
-    <state x="768" y="245" key="SettingsEditor/0.0.2715.1487@0.0.2715.1487" timestamp="1581425897243" />
     <state x="1641" y="448" width="540" height="524" key="StructurePopup" timestamp="1583760592214">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1641" y="448" width="540" height="524" key="StructurePopup/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1583760592214" />
-    <state x="976" y="525" key="com.intellij.ide.util.TipDialog" timestamp="1580913610396">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="976" y="525" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1580913610396" />
     <state x="1421" y="0" width="1066" height="1378" key="dock-window-1" timestamp="1584284055838">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1421" y="0" width="1066" height="1378" key="dock-window-1/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1584284055838" />
-    <state x="1446" y="543" width="1154" height="800" key="dock-window-1/0.0.2715.1487@0.0.2715.1487" timestamp="1581426277251" />
     <state x="488" y="201" width="331" height="937" key="dock-window-2" timestamp="1582980991107">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="488" y="201" width="331" height="937" key="dock-window-2/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1582980991107" />
-    <state x="180" y="0" width="1072" height="1384" key="dock-window-3" timestamp="1581357682631">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="180" y="0" width="1072" height="1384" key="dock-window-3/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1581357682631" />
-    <state x="139" y="0" width="1072" height="1384" key="dock-window-4" timestamp="1581354840610">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="139" y="0" width="1072" height="1384" key="dock-window-4/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1581354840610" />
-    <state x="1375" y="311" key="ftp.server.browser" timestamp="1580739427912">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1375" y="311" key="ftp.server.browser/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1580739427912" />
-    <state x="1576" y="334" key="run.anything.popup" timestamp="1580739609023">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1576" y="334" key="run.anything.popup/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1580739609023" />
     <state x="1604" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1583772484033">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

@@ -74,10 +74,10 @@ if (isset($_POST['login_user'])) {
     $_SESSION["username"] = $username;
     $password = $_POST['password'];
 
-    if(empty($username))
+    if (empty($username))
         array_push($username_errors, "Username not set");
 
-    if(empty($password))
+    if (empty($password))
         array_push($password_errors, "Password not set");
 
     if (empty($username_errors) and empty($password_errors)) {
@@ -85,13 +85,12 @@ if (isset($_POST['login_user'])) {
         $results = mysqli_query($db, $query);
 
         if (mysqli_num_rows($results) == 1) {
-
             while ($row = mysqli_fetch_assoc($result)) {
                 $salt = $row['salt'];
                 $hash = $row['password'];
+                $hashed_password = md5($salt . $password);
             }
-            $password = md5($salt . $password);
-            if ($password == $hash) {
+            if ($hashed_password == $hash) {
                 session_start();
                 $_SESSION['user'] = $username;
                 header("location: tasks.php");
