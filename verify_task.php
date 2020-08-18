@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION["user"])) {
-    header("location: verify_login.php");
+    header("location: login.php");
     exit();
 }
 
@@ -15,8 +15,8 @@ $db = mysqli_connect('emps-sql.ex.ac.uk', 'wc352', 'wc352', 'wc352', '3306');
 if (isset($_POST['new_task'])) {
     $username = $_SESSION["user"];
     $id = $_POST['id'];
-    $title = $_POST['title'];
-    $description = $_POST['description'];
+    $title = htmlspecialchars($_POST['title']);
+    $description = htmlspecialchars($_POST['description']);
     $due_date = $_POST['due_date'];
     $done = False;
 
@@ -32,8 +32,8 @@ if (isset($_POST['new_task'])) {
 
 if (isset($_POST['edit_task'])) {
     $id = $_POST['id'];
-    $title = $_POST['title'];
-    $description = $_POST['description'];
+    $title = htmlspecialchars($_POST['title']);
+    $description = htmlspecialchars($_POST['description']);
     $due_date = $_POST['due_date'];
     $query = "UPDATE tasks SET title='$title', description='$description', due_date='$due_date' WHERE id='$id'";
     mysqli_query($db, $query);
