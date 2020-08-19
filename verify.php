@@ -9,11 +9,6 @@ $password_errors = array();
 $other_errors = array();
 
 if (isset($_POST['reg_user'])) {
-    $conn = new mysqli('emps-sql.ex.ac.uk', 'wc352', 'wc352', 'wc352', '3306');
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-
     $username = $_POST['username'];
     $_SESSION["username"] = $username;
     $password = $_POST['password'];
@@ -81,6 +76,15 @@ if (isset($_POST['reg_user'])) {
                 header("location: tasks.php");
                 exit();
             }
+        } else {
+            $salt = bin2hex(openssl_random_pseudo_bytes(10));
+            $hash = md5($salt . $password);
+            $query = "INSERT INTO users (username, password, salt) VALUES('$username', '$hash', '$salt')";
+            mysqli_query($db, $query);
+            session_start();
+            $_SESSION['user'] = $username;
+            header("location: tasks.php");
+            exit();
         }
     } else {
         $_SESSION["username_errors"] = $username_errors;
@@ -90,14 +94,9 @@ if (isset($_POST['reg_user'])) {
 }
 
 if (isset($_POST['login_user'])) {
-    $conn = new mysqli('emps-sql.ex.ac.uk', 'wc352', 'wc352', 'wc352', '3306');
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-
-    $username = $_POST["username"];
+    $username = $_POST['username'];
     $_SESSION["username"] = $username;
-    $password = $_POST["password"];
+    $password = $_POST['password'];
 
     if (empty($username))
         array_push($username_errors, "Username not set");
@@ -107,28 +106,20 @@ if (isset($_POST['login_user'])) {
 
 
     if (empty($username_errors) and empty($password_errors)) {
-        $stmt = $conn -> stmt_init();
-        if ($stmt -> prepare("SELECT * FROM users WHERE username = ?")) {
-            $stmt->bind_param("s", $username);
-            $stmt->execute();
-            $stmt->bind_result($username, $password_hashed, $salt);
-            $stmt->fetch();
-            $stmt -> close();
+        $query = "SELECT * FROM users WHERE username='$username'";
+        $results = mysqli_query($db, $query);
 
-            if (isset($password_hashed)) {
-                $pepper_file = fopen("pepper.txt", "r") or die("Unable to open file");
-                $pepper = fread($pepper_file, filesize("pepper.txt"));
-                fclose($pepper_file);
-                $password = md5($salt . $password . $pepper);
-                if ($password == $password_hashed) {
-                    session_start();
-                    $_SESSION['user'] = $username;
-                    header("location: tasks.php");
-                    exit();
-                } else {
-                    array_push($other_errors, "Incorrect Password");
-                    $_SESSION["other_errors"] = $other_errors;
-                }
+        if (mysqli_num_rows($results) == 1) {
+            while ($row = mysqli_fetch_assoc($result)) {
+                $salt = $row['salt'];
+                $hash = $row['password'];
+                $hashed_password = md5($salt . $password);
+            }
+            if ($hashed_password == $hash) {
+                session_start();
+                $_SESSION['user'] = $username;
+                header("location: tasks.php");
+                exit();
             } else {
                 array_push($other_errors, "Incorrect Username");
                 $_SESSION["other_errors"] = $other_errors;
