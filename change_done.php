@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION["user"])) {
-    header("location: verify_login.php");
+    header("location: login.php");
     exit();
 }
 
@@ -11,7 +11,5 @@ if ($db->connect_error) {
 }
 
 $id = $_GET['id'];
-
 $query = "UPDATE tasks SET done = 1 WHERE id = '".$id."'";
-
 mysqli_query($db, $query);

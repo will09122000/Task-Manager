@@ -1,6 +1,8 @@
 <?php
 include('verify.php');
 $username = isset($_SESSION["username"]) ? $_SESSION["username"] : '';
+error_reporting(E_ALL);
+ini_set('display_errors', 'on');
 ?>
 
 <!DOCTYPE html>
